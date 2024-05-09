@@ -10,10 +10,12 @@ import { fetchUserName } from './services/firebase';
 import { useDispatch } from 'react-redux';
 import { setUser } from './redux/actions';
 import Register from "./views/Register/Register";
+
 const App = () => {
   const [user, loading, error] = useAuthState(auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
   useEffect(() => {
     if(error)navigate("/login");
     if (loading) return;
@@ -27,8 +29,8 @@ const App = () => {
   const fetchData = async (email) => {
     try {
       console.log(email);
-      const user = await fetchUserName(email); // Suponiendo que esta función obtiene el usuario actual
-      dispatch(setUser(user)); // Despachar la acción setUser con los datos del usuario
+      const user = await fetchUserName(email); 
+      dispatch(setUser(user)); 
     } catch (error) {
       console.error("Error fetching user data:", error);
     }

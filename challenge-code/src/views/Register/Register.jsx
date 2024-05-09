@@ -14,7 +14,6 @@ function Register() {
   const [lastName, setLastName] = useState("");
   const [generation, setGeneration] = useState("");
   const [idUniqueFamily, setIdUniqueFamily] = useState("");
-  const [role, setRole] = useState("user"); // Default role
   const [user, loading] = useAuthState(auth);
   const navigate = useNavigate();
 
@@ -23,7 +22,7 @@ function Register() {
       alert("Please fill in all required fields");
       return;
     }
-    registerWithEmailAndPassword(name, lastName, generation, idUniqueFamily, email, password,role);
+    registerWithEmailAndPassword(name, lastName, generation, idUniqueFamily, email, password,"user");
   };
 
   useEffect(() => {
@@ -39,49 +38,49 @@ function Register() {
           className="register__textBox"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Nombre"
+          placeholder="Name"
         />
         <input
           type="text"
           className="register__textBox"
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
-          placeholder="Apellido"
+          placeholder="Last Name"
         />
         <input
           type="text"
           className="register__textBox"
           value={generation}
           onChange={(e) => setGeneration(e.target.value)}
-          placeholder="Generación"
+          placeholder="Generation"
         />
         <input
           type="text"
           className="register__textBox"
           value={idUniqueFamily}
           onChange={(e) => setIdUniqueFamily(e.target.value)}
-          placeholder="ID Único de Familia"
+          placeholder="Family"
         />
         <input
           type="text"
           className="register__textBox"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Correo Electrónico"
+          placeholder="Email"
         />
         <input
           type="password"
           className="register__textBox"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          placeholder="Contraseña"
+          placeholder="Password"
         />
         <button className="register__btn" onClick={register}>
-          Registrar
+          Register
         </button>
 
         <div>
-          ¿Ya tienes una cuenta? <Link to="/login">Inicia sesión</Link>.
+          Do you already have an account?<Link to="/login">Log in</Link>.
         </div>
       </div>
     </div>

@@ -1,24 +1,23 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import {  logout } from "../../services/firebase";
-import './styles.css';
 import { useSelector } from 'react-redux';
+import './styles.css';
 
 export const Header = () => {
-  const user = useSelector(state => state.user); // Obtener el usuario del estado global de Redux
-  const name = user ? user.name : ''; // Obtener el nombre del usuario
+  const user = useSelector(state => state.user); 
+  const name = user ? user.name : ''; 
 
   return (
     <nav className="nav">
       <div className="profile">
-        <AccountCircleIcon /> Bienvenido {name}
+        <AccountCircleIcon /> Welcome {name}
       </div>
       <ul>
-        <CustomLink to="/home">Home</CustomLink>
+        <CustomLink className="home"to="/home">Home</CustomLink>
         <button onClick={() => logout()}>
-          Cerrar Sesión
+          Log Out
         </button>
-        <CustomLink to="/pokemon-detail">Modo Oscuro</CustomLink>
       </ul>
     </nav>
   );

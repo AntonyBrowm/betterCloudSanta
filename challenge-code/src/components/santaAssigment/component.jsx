@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getSantaAssignments } from '../../services/pairings';
-import './styles.css'; // Importar el archivo de estilos
+import './styles.css'; 
 
 export const SantaAssignments = () => {
   const [assignments, setAssignments] = useState([]);

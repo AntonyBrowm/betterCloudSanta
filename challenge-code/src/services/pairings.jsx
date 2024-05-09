@@ -7,7 +7,7 @@ export const getAllUsers = async () => {
     const response = await axios.get(`${baseURL}/users`);
     return response.data;
   } catch (error) {
-    console.error('Error al obtener todos los usuarios:', error);
+    console.error('Error getting all users:', error);
     throw error;
   }
 };
@@ -17,7 +17,7 @@ export const generateNewSantaGift = async (id_participant1, id_participant2) => 
     const response = await axios.post(`${baseURL}/pairings`, { id_participant1, id_participant2 });
     return response.data;
   } catch (error) {
-    console.error('Error al generar el nuevo intercambio de regalos de Santa:', error);
+    console.error('Error generating new Santa gift exchange:', error);
     throw error;
   }
 };

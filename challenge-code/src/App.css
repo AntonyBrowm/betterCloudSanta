@@ -15,8 +15,9 @@
   transform: translatey(-50%);
   text-align: justify;
   color: black;
-  font-family: 'Merriweather', serif;
+  font-family: 'Roboto', sans-serif; 
   height: max-content;
   width: 100%;
   height: 100%;
 }
+

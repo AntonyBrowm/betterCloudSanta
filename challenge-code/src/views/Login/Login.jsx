@@ -25,14 +25,14 @@ function Login() {
           className="login__textBox"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Ingresa tu email"
+          placeholder="Enter your email"
         />
         <input
           type="password"
           className="login__textBox"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          placeholder="Ingresa tu password"
+          placeholder="Enter your password"
         />
         <button
           className="login__btn"
@@ -42,10 +42,7 @@ function Login() {
         </button>
 
         <div>
-          <Link to="/reset">Recupera tu contraseña</Link>
-        </div>
-        <div>
-          Crea una cuenta nueva<Link to="/register"> Registrate</Link>
+          Create a new account<Link to="/register"> Register</Link>
         </div>
       </div>
     </div>

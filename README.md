@@ -27,7 +27,7 @@ To address the exclusion of immediate family members from selecting each other a
 ### Generation Algorithm:
 My solution incorporated a basic assignment algorithm designed to randomly select Secret Santas for each participant while adhering to the specified constraints. Although the algorithm provided satisfactory results, opportunities for improvement existed in terms of optimizing assignment logic and enhancing fairness in the selection process.
 
-### Colections
+### Collections
 
 This data structure to organize and store information efficiently and coherently, allowing easy access and manipulation of data related to participants, Secret Santa assignments, and families.
 

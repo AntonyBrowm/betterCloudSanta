@@ -39,32 +39,32 @@ Stores detailed information about each participant,
 including their name, email, and family affiliation. 
 This collection enables us to manage users and their roles within the system, as well as identify familial relationships between them.
 Field	Description
-#Document ID	Unique identifier for the user document.
-email	Email address of the user.
-generation	Generation of the user within the application.
-idUniqueFamily	Unique identifier for the family used internally.
-id_unique_family	Unique identifier for the family.
-id_user	ID of the user.
-lastName	Last name of the user.
-last_name	Last name of the user.
-name	First name of the user.
-role	Role of the user (e.g., user).
+#### Document ID	Unique identifier for the user document.
+#### email	Email address of the user.
+#### generation	Generation of the user within the application.
+#### dUniqueFamily	Unique identifier for the family used internally.
+#### id_unique_family	Unique identifier for the family.
+#### id_user	ID of the user.
+#### lastName	Last name of the user.
+#### last_name	Last name of the user.
+#### name	First name of the user.
+#### role	Role of the user (e.g., user).
 Santa_gift Collection:
 Records Secret Santa assignments, indicating who should buy a gift for whom. 
 Each document in this collection represents a unique assignment and includes information such as participant IDs and the assignment's status.
 This allows us to maintain a record of past assignments and ensure that each participant receives a unique gift.
 Field	Description
-Document ID	Unique identifier for the assignment document.
-id_exchange	Unique identifier for the gift exchange.
-id_participant1	ID of the first participant.
-id_participant2	ID of the second participant.
-status	Status of the assignment (e.g., pending).
-year	Year of the assignment.
+#### Document ID	Unique identifier for the assignment document.
+#### id_exchange	Unique identifier for the gift exchange.
+#### id_participant1	ID of the first participant.
+#### id_participant2	ID of the second participant.
+#### status	Status of the assignment (e.g., pending).
+#### year	Year of the assignment.
 Family Collection: 
 Contains details about the families participating in the Secret Santa gift exchange.
 This collection helps us group participants based on their familial relationships, making it easier to apply constraints such as preventing members of the same family from selecting each other as Secret Santas.
 Field	Description
-Document ID	Unique identifier for the family document.
-generation	Generation of the family within the application.
-id_unique_family	Unique identifier for the family.
-last_name	Last name of the family.  
+#### Document ID	Unique identifier for the family document.
+#### generation	Generation of the family within the application.
+#### id_unique_family	Unique identifier for the family.
+#### last_name	Last name of the family.  

@@ -1,9 +1,10 @@
-To execute the backend, follow these steps:
+### To execute the backend, follow these steps:
 
 Navigate to the "backend-code" directory.
 Run the following command:
 node src/exchange.js
-Once the backend is running, proceed to start the frontend:
+
+### Once the backend is running, proceed to start the frontend:
 
 Navigate to the "challenge-code" directory.
 Run the following command:

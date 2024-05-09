@@ -1,0 +1,30 @@
+.santa-assignments-container {
+    padding: 20px;
+  }
+  
+  .santa-assignments-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .santa-assignments-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .santa-assignment-item {
+    margin-bottom: 10px;
+  }
+  
+  .santa-assignment-label {
+    font-weight: bold;
+  }
+  
+  .santa-assignment-participant {
+    margin: 0 5px;
+  }
+  
+  .santa-assignment-arrow {
+    font-weight: bold;
+  }
+  

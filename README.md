@@ -21,9 +21,6 @@ For the backend infrastructure, I selected Express.js, a lightweight and flexibl
 ### Data Management:
 In managing user data and Secret Santa assignments, I utilized Firebase Firestore, a NoSQL cloud database provided by Google. Firestore's real-time synchronization capabilities and scalability made it an ideal choice for my application's data storage needs. By structuring the database schema to accommodate user profiles, family relationships, and assignment history, I ensured efficient data management and seamless integration with the frontend and backend components.
 
-### Constraint Handling:
-To enforce constraints such as preventing self-assignment and restricting repeat pairings within a three-year period, I implemented validation mechanisms within my API endpoints. While these validations were effective in ensuring compliance with the specified rules, further refinement could have been explored to enhance the robustness of the constraint handling logic.
-
 ### Immediate Family Exclusion:
 To address the exclusion of immediate family members from selecting each other as Secret Santas, I introduced a simple yet effective solution within the database schema. By establishing family groups and maintaining relationships between users, I enforced constraints that prevented intra-family assignments, promoting fairness and impartiality in the gift exchange process.
 

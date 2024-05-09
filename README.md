@@ -39,7 +39,7 @@ Stores detailed information about each participant,
 including their name, email, and family affiliation. 
 This collection enables us to manage users and their roles within the system, as well as identify familial relationships between them.
 Field	Description
-Document ID	Unique identifier for the user document.
+#Document ID	Unique identifier for the user document.
 email	Email address of the user.
 generation	Generation of the user within the application.
 idUniqueFamily	Unique identifier for the family used internally.

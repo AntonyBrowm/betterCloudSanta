@@ -13,7 +13,7 @@ npm run dev
 ### In tackling the Secret Santa challenge, my approach was straightforward yet effective, focusing on the utilization of familiar technologies and practical solutions to address the specified constraints. While acknowledging areas where further optimization could have been beneficial, my primary objective was to deliver a functional and reliable solution within the allotted timeframe.
 
 ### Frontend Structure:
-I chose to build the frontend using React, a widely adopted JavaScript library known for its simplicity and efficiency in building user interfaces. By structuring the frontend components using React's component-based architecture, I aimed to streamline the user experience and provide a seamless interface for participants to interact with the Secret Santa platform.
+I chose to build the frontend using React, a widely adopted JavaScript library known for its simplicity and efficiency in building user interfaces. By structuring the frontend components using React's component-based architecture, I aimed to streamline the user experience and provide a seamless interface for participants to interact with the Secret Santa platform. Also Redux to persist de User data.
 
 ### Backend Architecture:
 For the backend infrastructure, I selected Express.js, a lightweight and flexible web application framework for Node.js. Leveraging Express.js, I developed a RESTful API to handle incoming requests, manage data operations, and enforce business logic related to Secret Santa assignments. While the backend implementation was straightforward, it provided the necessary functionality to support the frontend application effectively.
